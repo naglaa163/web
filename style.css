@@ -1,0 +1,266 @@
+body{
+
+    background: white;
+    background-image: url(bg-pattern-top-desktop.svg),
+    url(bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+    background-repeat: no-repeat;
+
+    font-family: Spartan , "Lucida Console", Courier;
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.page{
+    padding-right: 20px;
+    margin: 20px auto;
+}
+
+.container{
+   /* width: 1000px;*/
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.zero{
+   width: 480px;
+    border: 1px;
+}
+
+.spn{
+    width: 250px;
+    font-size: 30px;
+    font-weight: 600;
+    color:hsl(300, 43%, 22%);
+    text-align: start;
+    display: block;
+    margin-bottom: 5px;
+
+}
+.p1{
+    width: 480px;
+    
+    color:  hsl(300, 43%, 22%);
+    font-size: 15px;
+    display: block;
+
+    text-align: start;
+}
+
+.all{
+    width: 420px;
+    border: 1px;
+    padding: 25px;
+}
+
+.one,
+.two,
+.three
+{
+    width: 360px;
+    height: 40px;
+    background-color: hsl(300, 24%, 96%);
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    color: hsl(300, 43%, 22%);;
+    border-radius: 10px;
+    text-overflow: none;
+    background-color:hsl(300, 24%, 96%) ;
+}
+.two{
+    transform: translateX(30px);
+}
+.three{
+    transform: translateX(60px);
+}
+.one span,
+.two span,
+.three span{
+    margin-left: 20px;
+}
+
+
+
+ .parent{
+   /* width: 1000px;*/
+    margin: 20px auto;
+    border: 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.four,
+.five,
+.six
+{
+
+    width: 300px;
+   /* height: 250px;*/
+    border-radius: 10px;
+    background: rgb(80, 17, 80);
+    color: rgb(243, 236, 236);
+    font-size: 15px; 
+    padding: 20px;
+    
+    
+}
+.four{
+    margin-right: 20px;
+}
+.four img,
+.five img,
+.six img
+{
+    width: 30px;
+
+    border-radius: 30px;
+    display: block;
+
+    
+
+    transform: translateY(35px);
+    
+    
+
+}
+
+.four .spn2,
+.five .spn2,
+.six .spn2
+{
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: 600px;
+    color: #f7f7f7;
+    text-align: center;
+    display: block;
+}
+.four .spn3,
+.five .spn3,
+.six .spn3
+{
+
+    font-size: 15px;
+    font-weight: 600;
+    display: block;
+    
+    color: hsl(333, 80%, 67%);
+    text-align: center;
+    margin-bottom: 20px;
+}
+.five{
+    margin-right: 20px;
+    transform: translateY(15px);
+
+}
+.six{
+    margin-right: 5px;
+    transform: translateY(30px);
+
+}
+@media (max-width: 760px) {
+    .parent {
+      
+      flex-direction: column;
+    }
+    .container {
+        
+        flex-direction: column;
+    }
+   body{ 
+       background-image: url(bg-pattern-top-mobile.svg),url(g-pattern-bottom-mobile.svg);
+       background-position: top,bottom;
+    }
+   .spn{
+       margin-left: 20px;
+    }
+   .p1{
+       margin-left: 20px;
+      
+    }
+    .one,
+    .two,
+    .three
+    {
+        width: 300px;
+        height: 80px;
+        border-radius: 10px;
+        background-color: hsl(300, 24%, 96%);
+        margin-bottom: 10px;
+   
+        font-size: 15px;
+        font-weight: 600px;
+        color: hsl(300, 43%, 22%);;
+       
+        text-overflow: none;
+        background-color:hsl(300, 24%, 96%) ;
+        text-align: center;
+    }
+    .one span,
+    .two span,
+    .three span 
+    {
+    
+       margin-top: 5px;
+       display: block;
+    }
+   
+   
+   .two {
+       transform: translateX(0px);
+    }
+   .three{
+       transform: translateX(0px);
+    }
+    .four{
+        margin-left: 20px;
+    }
+   
+    .five{
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        transform: translateY(0px);
+    }
+    .six{
+      margin-left: 20px;
+      transform: translateY(0px);
+    }
+   
+    .p1{
+        width: 300px;
+    }
+  
+}
+
+@media ( min-width: 765px) and (max-width:1400px) {
+    .parent {
+        flex-direction: row;
+
+    }
+    .container{
+        flex-direction: row;
+       
+    }
+    .page{
+        border-left: 1px;
+        border-top: 1px;
+          border-bottom: 5px  black;      
+          border-right: 1px solid;
+    }
+    
+}  
